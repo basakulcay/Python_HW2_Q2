@@ -7,11 +7,16 @@ Created on Tue Jan 26 08:57:50 2021
 """
 
 def main():
+    total=0
+    count = len(open('scores.txt').readlines())
     print('Score\tGrade')
     print('--------------')
     infile = open('scores.txt', 'r')
     for line in infile:
+        
         grade=line.rstrip('\n')
+        total=total+int(grade)
+        
         if int(grade) >= 90:
             print(grade, "\t\tAA")
         elif int(grade) >= 85:
@@ -28,4 +33,9 @@ def main():
             print(grade, "\t\tDD")
         else:
             print(grade, "\t\tFF")
+            
+    #print('The total score is',total)
+    #print(count)
+    print('The score average of the scores:',total/count)
+
 main()
