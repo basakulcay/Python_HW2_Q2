@@ -39,10 +39,7 @@ def fetch_grades():
         determine_grade(grade)
         total += int(grade)
         count +=1
-      
-    #print('The total score is',total)
-    #print(count)
-    
+
     
     print('The score average of the scores:',total/count)     
 
@@ -69,11 +66,6 @@ def determine_grade(grade):
     else:
         print(grade, "\t\tFF")
             
-    #print('The total score is',total)
-    #print(count)
-    
-    
-    #print('The score average of the scores:',total/count)
     
     
 main()
