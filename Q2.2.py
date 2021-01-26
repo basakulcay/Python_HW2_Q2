@@ -6,7 +6,7 @@ Created on Tue Jan 26 08:57:50 2021
 @author: basakulcay
 """
 
-def main():
+def determine_grade():
     total=0
     count = len(open('scores.txt').readlines())
     print('Score\tGrade')
@@ -38,4 +38,4 @@ def main():
     #print(count)
     print('The score average of the scores:',total/count)
 
-main()
+determine_grade()
