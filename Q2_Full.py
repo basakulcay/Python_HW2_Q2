@@ -5,15 +5,6 @@ Created on Tue Jan 26 16:28:52 2021
 
 @author: basakulcay
 """
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 26 16:14:40 2021
-
-@author: basakulcay
-"""
-
 def main():
     
     outfile=open('scores.txt','w')
@@ -39,9 +30,12 @@ def fetch_grades():
         determine_grade(grade)
         total += int(grade)
         count +=1
-
+      
+    #print('The total score is',total)
+    #print(count)
     
-    print('The score average of the scores:',total/count)     
+    
+    print('The score average of the scores:',format(total/count,".2f"))     
 
 
         
@@ -66,6 +60,11 @@ def determine_grade(grade):
     else:
         print(grade, "\t\tFF")
             
+    #print('The total score is',total)
+    #print(count)
+    
+    
+    #print('The score average of the scores:',total/count)
     
     
 main()
